@@ -1,0 +1,10 @@
+package org.manswi.messanger.resource;
+
+import javax.ws.rs.Path;
+
+@Path("/profiles")
+public class ProfileResource {
+	
+	
+
+}

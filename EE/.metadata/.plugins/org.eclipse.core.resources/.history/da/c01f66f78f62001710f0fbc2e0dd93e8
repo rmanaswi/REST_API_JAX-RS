@@ -1,0 +1,9 @@
+package org.manswi.messanger.resource;
+
+import javax.ws.rs.Path;
+
+@Path("/injectable")
+public class InjectDemoResource {
+	
+
+}

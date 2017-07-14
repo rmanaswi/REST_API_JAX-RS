@@ -1,0 +1,64 @@
+package org.manswi.messanger.resource;
+
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.manswi.messanger.model.Message;
+import org.manswi.messanger.model.Profile;
+import org.manswi.messanger.service.ProfileService;
+
+@Path("/profiles")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
+public class ProfileResource {
+	private ProfileService profileService=new ProfileService();
+	
+	@GET
+	public List<Profile> getProfile(){
+		return profileService.getAllProfiles();
+    }
+	
+	@POST
+	public Profile addProfiles(Profile profile){
+		
+			 return  profileService.addProfile(profile);
+		}
+	
+	
+	@PUT
+	@Path("/{messageId}")
+	public Profile updateMessages(@PathParam("messageId") long id, Profile profile){
+		profile.setId(id);
+			 return  profileService.updateProfile(profile);
+		}
+	
+	
+	
+	@DELETE
+	@Path("/{messageId}")
+  public void deleteMessages(@PathParam("messageId") long messageId){
+		
+		profileService.removeProfile(messageId);
+		}
+	
+	
+	
+	
+	@GET
+	@Path("/{messageId}")
+ public Message getMessage(@PathParam("messageId") long messageId){
+		
+    	return messageService.getMessage(messageId);
+    }
+	 
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.manswi.messanger.child&apos; to &apos;org.manswi.messanger.resource&apos;&#x0A;- Original project: &apos;messanger&apos;&#x0A;- Original element: &apos;messanger/src/main/java/org.manswi.messanger.child&apos;&#x0A;- Renamed element: &apos;messanger/src/main/java/org.manswi.messanger.resource&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.manswi.messanger.child&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;org.manswi.messanger.child" name="org.manswi.messanger.resource" qualified="false" references="true" stamp="1499204578188" textual="false" version="1.0"/>
+</session>

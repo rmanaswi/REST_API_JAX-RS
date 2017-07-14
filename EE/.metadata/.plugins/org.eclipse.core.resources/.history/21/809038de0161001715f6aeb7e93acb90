@@ -1,0 +1,5 @@
+package org.manswi.messanger.resource;
+
+public class ProfileResource {
+
+}

@@ -1,0 +1,5 @@
+package org.manswi.messanger.service;
+
+public class ProfileService {
+
+}

@@ -1,0 +1,16 @@
+package org.manswi.messanger.service;
+
+import java.util.Map;
+
+import org.manswi.messanger.database.Database;
+import org.manswi.messanger.model.Profile;
+
+public class ProfileService {
+	private Map<String,Profile> profiles=Database.getProfiles();
+	
+	  public List<Profile> getAllProfiles(){
+		  return new ArrayList<Profile>(profiles.values());
+	  }
+	
+
+}

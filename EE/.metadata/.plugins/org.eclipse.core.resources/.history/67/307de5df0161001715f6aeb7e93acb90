@@ -1,0 +1,6 @@
+package org.manswi.messanger.resource;
+
+@Path("/profiles")
+public class ProfileResource {
+
+}

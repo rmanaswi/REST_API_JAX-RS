@@ -1,0 +1,9 @@
+package org.manswi.messanger.service;
+
+public class ProfileService {
+	private Map<String,Profile> profiles=DatabaseClass.getProfiles();
+	
+	  
+	
+
+}
